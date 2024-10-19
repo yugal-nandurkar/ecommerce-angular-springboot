@@ -1,0 +1,18 @@
+<div class="product-list-container">
+    <h2>Product List</h2>
+    
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" />
+      
+      <h3>{{ product.name }}</h3>
+      <p><strong>Brand:</strong> {{ product.brand }}</p>
+      <p><strong>Description:</strong> {{ product.description }}</p>
+      <p><strong>Price:</strong> ${{ product.price }}</p>
+      <p><strong>Category:</strong> {{ product.category }}</p>
+      <p><strong>Stock Quantity:</strong> {{ product.stockQuantity }}</p>
+      <p><strong>Release Date:</strong> {{ product.releaseDate | date }}</p>
+  
+      <button (click)="selectProduct(product)">View Details</button>
+    </div>
+  </div>
+  

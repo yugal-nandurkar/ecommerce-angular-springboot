@@ -1,0 +1,32 @@
+src/
+└── main/
+    ├── java/
+    │   └── com/
+    │       └── example/
+    │           └── ecommerce/
+    │               ├── EcommerceApplication.java          // Class
+    │               ├── model/
+    │               │   ├── User.java                      // Class
+    │               │   ├── Product.java                   // Class
+    │               │   └── Order.java                     // Class
+    │               ├── repository/
+    │               │   ├── UserRepository.java            // Interface
+    │               │   ├── ProductRepository.java         // Interface
+    │               │   └── OrderRepository.java           // Interface
+    │               ├── service/
+    │               │   ├── UserService.java               // Interface (typically)
+    │               │   ├── ProductService.java            // Interface (typically)
+    │               │   └── OrderService.java              // Interface (typically)
+    │               ├── controller/
+    │               │   ├── UserController.java            // Class
+    │               │   ├── ProductController.java         // Class
+    │               │   └── OrderController.java           // Class
+    │               └── security/ (optional)
+    │                   ├── WebSecurityConfig.java         // Class
+    │                   └── jwt/
+                            └── JWTAuthenticationFilter.java
+                            └── JWTAuthorizationFilter.java (optional)
+                            └── SecurityConstants.java
+    └── resources/
+        ├── application.properties
+        └── static/

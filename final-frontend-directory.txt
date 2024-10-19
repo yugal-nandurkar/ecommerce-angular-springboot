@@ -1,0 +1,36 @@
+src/
+└── app/
+    ├── app.module.ts                  <-- The root module
+    ├── app.component.ts
+    ├── app.component.html
+    ├── app-routing.module.ts
+    ├── add-product/
+    │   ├── add-product.component.css
+    │   ├── add-product.component.html
+    │   └── add-product.component.ts
+    ├── auth/
+    │   └── auth.service.ts
+    ├── cart/
+    │   ├── cart.component.css
+    │   ├── cart.component.html
+    │   ├── cart.component.ts
+    │   ├── cart.module.ts
+    │   └── cart.service.ts
+    ├── product/
+    │   ├── product.module.ts
+    │   ├── product.service.ts
+    │   └── product-list/
+    │       ├── product-list.component.css
+    │       ├── product-list.component.ts
+    │       └── product-list.component.html
+    ├── user/
+    │   ├── user.module.ts
+    │   ├── login/
+    │   │   ├── login.component.ts
+    │   │   └── login.component.html
+    │   └── profile/
+    │       ├── profile.component.ts
+    │       └── profile.component.html
+
+
+
